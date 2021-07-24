@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="[Quan hệ] <= 2.5\nentropy = 1.301\nsamples = 509\nvalue = [42, 186, 281]\nclass = [Chưa có người yêu]", fillcolor="#dac5f7"] ;
+1 [label="[Học vấn] <= 2.5\nentropy = 1.306\nsamples = 206\nvalue = [21, 122, 63]\nclass = [Đã có người yêu]", fillcolor="#adf4cb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="[Tài sản] <= 2.5\nentropy = 1.44\nsamples = 86\nvalue = [14, 27, 45]\nclass = [Chưa có người yêu]", fillcolor="#d9c3f7"] ;
+1 -> 2 ;
+3 [label="entropy = 1.42\nsamples = 32\nvalue = [8, 18, 6]\nclass = [Đã có người yêu]", fillcolor="#acf4ca"] ;
+2 -> 3 ;
+4 [label="entropy = 1.122\nsamples = 54\nvalue = [6, 9, 39]\nclass = [Chưa có người yêu]", fillcolor="#ab7bee"] ;
+2 -> 4 ;
+5 [label="[Ngoại hình] <= 1.5\nentropy = 0.917\nsamples = 120\nvalue = [7, 95, 18]\nclass = [Đã có người yêu]", fillcolor="#6aeba0"] ;
+1 -> 5 ;
+6 [label="entropy = 1.433\nsamples = 30\nvalue = [4, 13, 13]\nclass = [Đã có người yêu]", fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label="entropy = 0.518\nsamples = 90\nvalue = [3, 82, 5]\nclass = [Đã có người yêu]", fillcolor="#4ce78d"] ;
+5 -> 7 ;
+8 [label="[Tài sản] <= 2.5\nentropy = 1.082\nsamples = 303\nvalue = [21, 64, 218]\nclass = [Chưa có người yêu]", fillcolor="#ae7fee"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="[Học vấn] <= 2.5\nentropy = 1.35\nsamples = 120\nvalue = [11, 55, 54]\nclass = [Đã có người yêu]", fillcolor="#fcfffd"] ;
+8 -> 9 ;
+10 [label="entropy = 1.004\nsamples = 48\nvalue = [5, 6, 37]\nclass = [Chưa có người yêu]", fillcolor="#a26dec"] ;
+9 -> 10 ;
+11 [label="entropy = 1.168\nsamples = 72\nvalue = [6, 49, 17]\nclass = [Đã có người yêu]", fillcolor="#8cf0b6"] ;
+9 -> 11 ;
+12 [label="[Học vấn] <= 3.5\nentropy = 0.585\nsamples = 183\nvalue = [10, 9, 164]\nclass = [Chưa có người yêu]", fillcolor="#8f4fe8"] ;
+8 -> 12 ;
+13 [label="entropy = 0.13\nsamples = 111\nvalue = [2, 0, 109]\nclass = [Chưa có người yêu]", fillcolor="#833de5"] ;
+12 -> 13 ;
+14 [label="entropy = 1.024\nsamples = 72\nvalue = [8, 9, 55]\nclass = [Chưa có người yêu]", fillcolor="#a36eec"] ;
+12 -> 14 ;
+}
